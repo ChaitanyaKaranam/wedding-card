@@ -265,7 +265,8 @@ html{
     color: #E0D4A8;
 }
 
-.fa-file-alt{
+.fa-file-alt,
+.fa-camera-retro{
     animation: blink 1.5s ease-in infinite;
 }
 
@@ -350,7 +351,7 @@ html{
     .timer__date{
         margin-top: 20px;
         padding-bottom: 20px;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
 
     .timer__countdown{
