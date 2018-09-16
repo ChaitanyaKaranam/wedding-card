@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,700i,800" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="image-class">
+            <img src="images/layout1.jpg" alt="wedding" class="image-background">
+            <div class="text-box">
+                <h1 class="heading">We are getting Married</h1>
+                <a class="btn" href="details.html">Itinerary</a>
+            </div>
+        </div>    
+        <div class="details row">
+            <div class="map col-1-of-2">
+                <h2 class="map__marriage-heading">Marriage <a class="details__link" href="https://goo.gl/maps/ZSscDUzLwQU2"><i class="fas fa-map-marker-alt"></i></a> </h2>
+                <h3 class="map__marriage-address">CSI JCM Church, Madanapalle</h3>
+                <h2 class="map__reception-heading">Reception <a class="details__link" href="https://goo.gl/maps/nCnWdYnScLQ2"><i class="fas fa-map-marker-alt"></i></a></h2>
+                <h3 class="map__reception-address">NVR Convention Hall,<br>Near H.P Gas office,<br>Buggakaluva, Madanapalle</h3>
+            </div>
+            <div class="timer col-1-of-2">
+                <h2 class="timer__date">Save the date - <span class="timer__date-display">October 12</span> <i class="fas fa-calendar-alt"></i></h2>
+                <h3 class="timer__countdown">Countdown: <br><br><span id="timer_id"></span></h3>
+            </div>
+        </div>      
+    </div>
+    <script>
+        var countdown_date = new Date('Oct 12, 2018 10:30:00').getTime();
+        setInterval(()=>{
+            var now = new Date().getTime();
+            var diff = countdown_date - now;
+            
+            var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+            document.getElementById("timer_id").innerHTML = days + "d " + hours + "h "  + minutes + "m " + seconds + "s ";
+
+        },1000);
+       
+
+    </script>  
+</body>
+</html>
