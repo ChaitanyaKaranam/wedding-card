@@ -166,18 +166,26 @@ html{
     margin-top: 20px;
     text-transform: uppercase;
     padding-bottom: 20px;
+    font-size: 2.5rem;
 }
 
 .map__marriage-address,
 .map__reception-address{
     /* text-transform: uppercase; */
     padding-bottom: 20px;
+    font-size: 2rem;
 }
 
 .timer__date{
     margin-top: 20px;
     text-transform: uppercase;
     padding-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+.timer__countdown{
+    font-size: 2.5rem;
+    margin-top: 40px;
 }
 
 .image__container{
@@ -210,6 +218,11 @@ html{
 
 .details__wedding-text{
     padding: 30px;
+    font-size: 1.5rem;
+}
+
+.details__ceremony-text{
+    font-size: 1.5rem;
 }
 
 .details__ceremony-image{
@@ -233,6 +246,7 @@ html{
 
 .col-1-of-6{
     width: 23%;
+    font-size: 1.5rem;
     border-left: 2px solid #806548;
     float: left;
     margin-right: 20px;
@@ -276,7 +290,7 @@ html{
     }
 
     .heading{
-        font-size: 1.6rem;
+        font-size: 1.7rem;
     }
 
     .btn:link,
@@ -318,14 +332,14 @@ html{
     
     .map__marriage-heading,
     .map__reception-heading{
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
 
     .map__marriage-address,
     .map__reception-address{
         /* text-transform: uppercase; */
         padding-bottom: 20px;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 
     .timer__date{
@@ -342,6 +356,7 @@ html{
 
     .border{
         display: block;
+        border-color: #806548
     }
 
     .col-1-of-3{
