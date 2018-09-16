@@ -192,6 +192,10 @@ html{
     color: #C2AA86;
 }
 
+.border{
+    display: none;
+}
+
 .details__wedding-image{
     position: relative;
 }
@@ -256,14 +260,23 @@ html{
         width: 100%;
     }
 
-    .image-background{
+    .image__container{
+        border:none;
+    }
+
+    .image-background,
+    .image__container-image{
         position: relative;
         width: 180%;
         left: -40%;
     }
 
+    .image__container-text{
+        width: 90%;
+    }
+
     .heading{
-        font-size: 2.5rem;
+        font-size: 1.6rem;
     }
 
     .btn:link,
@@ -327,10 +340,46 @@ html{
         margin-top: 40px;
     }
 
+    .border{
+        display: block;
+    }
 
+    /* .on-1-of-2,
+    .off-1-of-2{
+        display: none;
+    } */
 
+    .col-1-of-3{
+        float: left;
+        width: 33%;
+        height: 300px;
+        margin-left: 0px;
+        margin-bottom: 0px;
+    }
 
+    .details__ceremony-text{
+        align-items: flex-end;
+        justify-items: flex-end;
+        justify-content: flex-end;
+        align-content: flex-end;
+        padding-left: 10px;
+    }
 
+    .details__ceremony-image{
+        padding: 0px;
+        padding-bottom: 10px;
+    }
 
+    .details__wedding-text{
+        padding: 0px;
+    }
+
+    .col-1-of-6{
+        width: 40%;
+        border-left: 2px solid #806548;
+        float: left;
+        margin-right: 20px;
+        margin-top: 20px;
+    }
 
 }
