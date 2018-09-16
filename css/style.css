@@ -344,17 +344,13 @@ html{
         display: block;
     }
 
-    /* .on-1-of-2,
-    .off-1-of-2{
-        display: none;
-    } */
-
     .col-1-of-3{
         float: left;
-        width: 33%;
-        height: 300px;
+        width: 100%;
+        height: 200px;
         margin-left: 0px;
         margin-bottom: 0px;
+        font-size: 1.5rem;
     }
 
     .details__ceremony-text{
@@ -375,9 +371,10 @@ html{
     }
 
     .col-1-of-6{
-        width: 40%;
+        width: 43%;
         border-left: 2px solid #806548;
         float: left;
+        font-size: 1.3rem;
         margin-right: 20px;
         margin-top: 20px;
     }
