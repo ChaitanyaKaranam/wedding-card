@@ -291,6 +291,42 @@ html{
         animation: none;
     }
 
+    .map{
+        padding-right: 1rem;
+        padding-left: 0rem;
+    }
+
+    .col-1-of-2:not(:last-child){
+        border-color: #806548;
+        border-width: 0px;
+        border-right-width: 2px;
+        border-style: solid;
+    }
+    
+    .map__marriage-heading,
+    .map__reception-heading{
+        font-size: 2rem;
+    }
+
+    .map__marriage-address,
+    .map__reception-address{
+        /* text-transform: uppercase; */
+        padding-bottom: 20px;
+        font-size: 1.5rem;
+    }
+
+    .timer__date{
+        margin-top: 20px;
+        text-transform: uppercase;
+        padding-bottom: 20px;
+        font-size: 1.5rem;
+    }
+
+    .timer__countdown{
+        font-size: 1.6rem;
+        margin-top: 40px;
+    }
+
 
 
 
