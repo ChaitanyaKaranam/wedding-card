@@ -251,8 +251,9 @@ html{
 
 @media (max-width: 480px){
 
-    html{
+    body{
         overflow-x: hidden;
+        width: 100%;
     }
 
     .image-background{
@@ -279,7 +280,13 @@ html{
     }
 
     .btn:hover{
-        transform: translateY(-3rem);
+        transform: translateY(-1rem);
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+        animation: none;
+    }
+
+    .btn:active{
+        transform: translateY(-.5rem);
         box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
         animation: none;
     }
